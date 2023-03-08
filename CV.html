@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Agrega el archivo JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Agrega el enlace de Bootstrap a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Agrega el enlace de la biblioteca de iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    
+   
+
+
+    <title>CV</title>
+
+
+</head>
+
+<body>
+
+
+
+    <header class="bg-light">
+        <div class="container py-5">
+
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img id="profile-image" src="" alt="Foto de perfil" class="img-fluid rounded-circle">
+                </div>
+
+                <div class="col-md-9">
+                    <h1 id="name"></h1>
+                    <p class="lead">Web designer</p>
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        <span id="email"></span>
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        <span id="phone"></span>
+                    </p>
+                </div>
+
+            </div>
+
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <h2>Educación</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Título universitario y fecha</h3>
+                    <p>Descripción de la educación</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Curso o capacitación y fecha</h3>
+                    <p>Descripción de la educación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2>Experiencia laboral</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Nombre de la empresa y fecha</h3>
+                    <p>Descripción del trabajo y responsabilidades</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Nombre de la empresa y fecha</h3>
+                    <p>Descripción del trabajo y responsabilidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul class="list-unstyled">
+                <li>Habilidad 1</li>
+                <li>Habilidad 2</li>
+                <li>Habilidad 3</li>
+                <li>Habilidad 4</li>
+            </ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2>Formulario de contacto</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form id="myForm" action="submit-form.php" method="POST" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="nameForm">Nombre:</label>
+                                <input type="text" class="form-control" id="nameForm" name="nameForm">
+                                <div id="name-error" class="error-message"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="emailForm">Email:</label>
+                                <input type="email" class="form-control" id="emailForm" name="emailForm">
+                                <div id="email-error" class="error-message"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                        <!-- elemento para mostrar el mensaje de confirmación -->
+                        <div id="confirmationMessage" class="alert alert-success" style="display:none;">
+                            El formulario se ha enviado correctamente.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="myscript.js"></script>
+
+</body>
+
+<footer class="bg-light py-3">
+    <div class="container text-center">
+      <p>&copy; 2023 Karen Fernandez Lopetegui. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+
+</html>
